@@ -1,3 +1,120 @@
 body {
-  background: linear-gradient(40deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  background: linear-gradient(40deg, rgb(28, 27, 27), rgb(58, 58, 58));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 15px 60px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+header a {
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+  background-color: #7ed957;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 12px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  padding: 10px;
+}
+
+header a:hover {
+  background-color: #66b246;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#site-logo {
+  border-radius: 20px;
+}
+
+#welcome-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+}
+
+.resize {
+  width: 850px;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #66b246;
+}
+p.vignette {
+  position: relative;
+}
+p.vignette img {
+  display: block;
+}
+p.vignette:after {
+  -moz-box-shadow: inset 0 0 50em rgb(28, 27, 27);
+  -webkit-box-shadow: inset 0 0 50em rgb(28, 27, 27);
+  box-shadow: inset 0 0 50em rgb(28, 27, 27);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  content: "";
+  border-radius: 40px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
