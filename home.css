@@ -68,12 +68,12 @@ ul {
 
 .center {
   position: absolute;
-  top: 15%;
+  top: 20%;
   width: 100%;
   text-align: center;
   font-size: 45px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #66b246;
+  color: #81f151;
 }
 p.vignette {
   position: relative;
