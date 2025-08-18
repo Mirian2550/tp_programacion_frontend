@@ -52,6 +52,8 @@ ul {
   margin-left: auto;
   margin-right: auto;
   border-radius: 40px;
+  border: solid;
+  border-color: #d7d1d1;
 }
 
 .resize {
@@ -63,13 +65,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 116vh;
 }
 
 .center {
   position: absolute;
+  margin-top: 55px;
   top: 20%;
-  width: 100%;
+  width: 75%;
   text-align: center;
   font-size: 45px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -77,6 +80,7 @@ ul {
 }
 p.vignette {
   position: relative;
+  margin-top: 100px;
 }
 p.vignette img {
   display: block;
