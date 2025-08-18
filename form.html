@@ -1,12 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
   </head>
   <body>
-    <p>Prueba Mirian</p>
-    <p>Prueba fran</p>
+    <header>
+      <div class="topbar">
+        <a class="logo" href="home.html" aria-label="Inicio">
+          <img id="site-logo" src="images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+          <a href="home.html">Inicio</a>
+          <a class="active" href="form.html">Agregar a tu log</a>
+          <a href="list.html">Listas</a>
+          <a href="#">Tu perfil</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2>¡Agregá una película a tu log!</h2>
+      <section class="form-area">
+        <form id="movieForm" action="list.html" method="post" class="form-box">
+          <div class="row">
+            <div class="field">
+              <label for="title">Título <span>*</span></label>
+              <input
+                id="title"
+                name="title"
+                type="text"
+                required
+                minlength="2"
+                placeholder="Ej: El secreto de sus ojos"
+              />
+            </div>
+            <div class="field">
+              <label for="year">Año <span>*</span></label>
+              <input
+                id="year"
+                name="year"
+                type="number"
+                required
+                min="1900"
+                max="2025"
+                placeholder="2009"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="genre">Género</label>
+              <select id="genre" name="genre">
+                <option value="">Seleccioná…</option>
+                <option>Drama</option>
+                <option>Comedia</option>
+                <option>Acción</option>
+                <option>Suspenso</option>
+                <option>Animación</option>
+                <option>Documental</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="duration">Duración (min)</label>
+              <input
+                id="duration"
+                name="duration"
+                type="number"
+                min="1"
+                placeholder="129"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="rating">Calificación (1–10) <span>*</span></label>
+              <input
+                id="rating"
+                name="rating"
+                type="number"
+                required
+                min="1"
+                max="10"
+                placeholder="8"
+              />
+            </div>
+            <div class="field">
+              <label for="imgUrl">Imagen (URL)</label>
+              <input
+                id="imgUrl"
+                name="imgUrl"
+                type="url"
+                placeholder="https://ejemplo.com/imagen.jpg"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="director">Director/a</label>
+              <input
+                id="director"
+                name="director"
+                type="text"
+                placeholder="Juan José Campanella"
+              />
+            </div>
+            <div class="field">
+              <label for="language">Idioma</label>
+              <select id="language" name="language">
+                <option value="">Seleccioná…</option>
+                <option>Español</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+                <option>Portugués</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="plot">Sinopsis</label>
+            <textarea
+              id="plot"
+              name="plot"
+              rows="4"
+              placeholder="Contá brevemente de qué trata…"
+            ></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn">Guardar en mi log</button>
+            <a href="home.html" class="btn btn-secondary">Cancelar</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho con ♥ — Tu Log de Películas</p>
+    </footer>
   </body>
 </html>
