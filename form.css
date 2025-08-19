@@ -29,6 +29,12 @@ header {
 #site-logo {
   height: 60px;
   border-radius: 8px;
+  border: solid;
+  border-color: black;
+}
+
+#site-logo:hover {
+  border-color: rgb(221, 221, 221);
 }
 
 nav {
@@ -47,6 +53,10 @@ nav a {
 
 nav .active {
   background: #4cfd00;
+}
+
+.inactive:hover {
+  background-color: #4cfd00;
 }
 
 h2 {
@@ -117,6 +127,16 @@ textarea {
   background: transparent;
   border: 1px solid #ccc;
   color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #1c1b1b;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #4c6d3d;
+  color: rgb(255, 255, 255);
 }
 
 footer {
