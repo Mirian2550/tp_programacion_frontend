@@ -56,11 +56,35 @@ ul {
   border-color: #d7d1d1;
 }
 
+#last-seen {
+  position: absolute;
+  margin-top: 800px;
+  margin-left: 230px;
+  top: 20%;
+  width: 75%;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #81f151;
+}
+
 .resize {
   width: 850px;
   height: auto;
 }
 
+.flex-container-last-seen {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.last-seen {
+  width: 200px;
+}
 .flex-container {
   display: flex;
   justify-content: center;
