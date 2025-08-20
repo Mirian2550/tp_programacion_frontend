@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(40deg, rgb(28, 27, 27), rgb(58, 58, 58));
+  margin: auto;
 }
 
 header {
@@ -36,11 +37,41 @@ header li {
 header a:hover {
   background-color: #66b246;
 }
+h1 {
+  font-size: 25px;
+  padding: 14px;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 ul {
   list-style-type: none;
 }
 
+footer {
+  background: linear-gradient(70deg, #7ed957, #5c9b41);
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  width: 80px;
+  height: 80px;
+  margin: 0 12px;
+}
+footer img {
+  width: 50%;
+  height: 50%;
+}
+#copy {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 #site-logo {
   border-radius: 20px;
 }
@@ -161,4 +192,11 @@ p.vignette:after {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
+  border-radius: 3px;
+}
+.contact {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding-left: 12px;
 }
