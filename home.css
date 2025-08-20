@@ -38,10 +38,12 @@ header a:hover {
   background-color: #66b246;
 }
 h1 {
-  font-size: 25px;
+  font-size: 27px;
   padding: 14px;
-  margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  text-decoration: underline;
 }
 
 ul {
@@ -52,8 +54,7 @@ footer {
   background: linear-gradient(70deg, #7ed957, #5c9b41);
 }
 footer ul {
-  margin: 0;
-  padding: 0;
+  margin: 12px 0;
   display: flex;
   justify-content: center;
 }
@@ -63,14 +64,19 @@ footer li {
   margin: 0 12px;
 }
 footer img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
+}
+#Hecho {
+  text-align: center;
+  margin-top: -15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
 }
 #copy {
   font-family: "Times New Roman", Times, serif;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 #site-logo {
   border-radius: 20px;
@@ -195,8 +201,9 @@ p.vignette:after {
   border-radius: 3px;
 }
 .contact {
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 12px;
   padding-left: 12px;
 }

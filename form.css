@@ -141,7 +141,7 @@ button:hover {
 
 footer {
   text-align: center;
-  color: #ccc;
   padding: 12px 0;
   margin-top: 24px;
+  background: linear-gradient(70deg, #7ed957, #5c9b41);
 }
