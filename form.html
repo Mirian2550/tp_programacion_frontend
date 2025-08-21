@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <script src="form.js" defer></script>
+    <script src defer="form.js"></script>
     <title>Form</title>
   </head>
   <body>
@@ -114,9 +114,8 @@
                 name="director"
                 type="text"
                 placeholder="Juan José Campanella"
-                pattern="[A-Za-z\s]+"
+                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
                 title="Ingresar el nombre de un director/a válido"
-                required
               />
             </div>
             <div class="field">
