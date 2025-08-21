@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav-footer.css" />
     <link rel="stylesheet" href="home.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Home</title>
   </head>
   <body>
     <header>
       <img id="site-logo" src="images/logo.png" />
-      <nav>
+      <nav id="lol">
         <ul>
           <li><a href="#">Tu perfil</a></li>
           <li><a href="form.html">Agregar a tu log</a></li>
@@ -40,28 +44,44 @@
       </div>
     </main>
     <footer>
-      <div class="contact">
-      <h1>Contacto</h1>
-        <p>Teléfono: 03412598239</p>
-        <p>Correo electronico <a href="https://www.gmail.com/">shsuhsa@.com/a></p>
-      </div>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com" target="_blank">
-            <img src="images/icons/insta.png" alt="instagram logo" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="images/icons/facebook.png" alt="facebook logo" />
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/?lang=es" target="_blank">
-            <img src="images/icons/twitter.png" alt="twitter logo" />
-          </a>
-        </li>
-      </ul>
+      <section class="info">
+        <div class="cols">
+          <div class="col">
+            <h3>Sobre nosotros</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              necessitatibus culpa iusto ipsam expedita fuga nam explicabo
+              accusamus. Optio, facilis officia! Corporis non consequuntur
+              repellat repudiandae illum vitae esse aperiam!
+            </p>
+          </div>
+          <div class="col">
+            <h3>Buscanos en</h3>
+            <ul class="links">
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Contacto</h3>
+            <p>
+              Escribinos a
+              <a href="mailto:movielog@mail.com">movielog@mail.com</a>
+            </p>
+            <p>
+              Teléfono: <a href="tel:+5493415123456">+54 9 341 5 123 456</a>
+            </p>
+          </div>
+        </div>
+      </section>
       <p id="Hecho">Hecho con ♥ — Tu Log de Películas</p>
       <p id="copy">&copy;2025, Todos los derechos reservados</p>
     </footer>
