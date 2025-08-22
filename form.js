@@ -1,2 +1,10 @@
-const form = document.getElementById("form");
-const campoDirector = getElementById("director");
+const myForm = document.getElementById("form");
+const inputDirector = document.getElementById("director");
+const errorElement = document.getElementById("error");
+
+myForm.addEventListener("submit", (e) => {
+  if (inputDirector.value === !NaN || inputDirector == null) {
+    console.log("El nombre del director/a es inválido");
+  }
+  e.preventDefault();
+});
