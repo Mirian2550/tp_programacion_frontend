@@ -1,12 +1,13 @@
 # Trabajo Final Integrador — Cuatro Vientos
 
-## Integrantes
+## Frontend
+Temática elegida: **Log de Películas**
 
-- Francisco Falabella
-- Mirian Yañez
-- Elias
-- Ludmila
+## Integrantes
+- Francisco Falabella  
+- Mirian Yañez  
+- Elías  
+- Ludmila  
 
 ## Año
-
 2025
