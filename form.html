@@ -9,11 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
+    <script src="form.js" defer></script>
     <title>Form</title>
   </head>
   <body>
-    <script src defer="form.js"></script>
     <header>
       <div class="topbar">
         <a class="logo" href="home.html" aria-label="Inicio">
@@ -31,7 +30,7 @@
     <main>
       <h2>¡Agregá una película a tu log!</h2>
       <section class="form-area">
-        <form id="movieForm" action="list.html" method="post" class="form-box">
+        <form id="movieForm" action="#" method="get" class="form-box">
           <div class="row">
             <div class="field">
               <label for="title">Título <span>*</span></label>
@@ -40,7 +39,7 @@
                 name="title"
                 type="text"
                 required
-                minlength="2"
+                minlength="3"
                 placeholder="Ej: El secreto de sus ojos"
               />
             </div>
@@ -53,7 +52,7 @@
                 required
                 min="1900"
                 max="2025"
-                placeholder="2009"
+                placeholder="2010"
               />
             </div>
           </div>
@@ -78,22 +77,22 @@
                 name="duration"
                 type="number"
                 min="1"
-                placeholder="129"
+                placeholder="120"
               />
             </div>
           </div>
 
           <div class="row">
             <div class="field">
-              <label for="rating">Calificación (1–10) <span>*</span></label>
+              <label for="rating">Calificación (1–5) <span>*</span></label>
               <input
                 id="rating"
                 name="rating"
                 type="number"
                 required
                 min="1"
-                max="10"
-                placeholder="8"
+                max="5"
+                placeholder="4"
               />
             </div>
             <div class="field">
@@ -117,7 +116,7 @@
                 placeholder="Juan José Campanella"
                 <span id="valueTest"></span>
 
-           
+              />
             </div>
             <div class="field">
               <label for="language">Idioma</label>
@@ -133,13 +132,21 @@
           </div>
 
           <div class="field">
-            <label for="plot">Sinopsis</label>
+            <label for="plot"
+              >Sinopsis (Tiene que contener entre 10 y 250 caracteres) *</label
+            >
             <textarea
               id="plot"
               name="plot"
               rows="4"
+              minlength="10"
+              maxlength="250"
               placeholder="Contá brevemente de qué trata…"
+              required
             ></textarea>
+            <div>
+              <span id="remaining-chars">250</span> caracteres restantes
+            </div>
           </div>
 
           <div class="actions">
