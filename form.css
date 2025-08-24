@@ -77,3 +77,15 @@ button:hover {
   background-color: #4c6d3d;
   color: rgb(255, 255, 255);
 }
+
+.warning {
+  border: 2px solid #f1c40f;
+  background: #fff8e1;
+  color: #f39c12;
+}
+
+.error {
+  border: 2px solid #e74c3c;
+  background: #fdecea;
+  color: #e74c3c;
+}
