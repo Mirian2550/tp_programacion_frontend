@@ -3,7 +3,7 @@ h1 {
   line-height: 1.1;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #81f151;
-  margin: 32px 0px;
+  margin: 32px 0;
   text-transform: uppercase;
 }
 
@@ -40,34 +40,16 @@ h2 {
 .flex-container-last-seen {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 24px;
   justify-content: center;
   align-items: center;
   padding: 12px 16px 32px;
 }
 
-.center {
-  position: absolute;
-  margin-top: 55px;
-  top: 10%;
-  width: 75%;
-  text-align: center;
-  font-size: 45px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #81f151;
-}
-
-p.vignette {
-  position: relative;
-  margin-top: 100px;
-}
-p.vignette img {
-}
 .item {
-  width: 200px;
-  max-width: 100%;
-  height: auto;
+  width: 180px;
+  height: 260px;
   border-radius: 12px;
-
   display: block;
+  object-fit: cover;
 }
