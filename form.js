@@ -8,3 +8,14 @@ myForm.addEventListener("submit", (e) => {
   }
   e.preventDefault();
 });
+
+// // Calificacion
+// const input = document.getElementById("rating");
+
+// const Rating = document.querySelector("rating");
+
+// function InputTextChange (event) {
+// if (Rating < 10) {
+
+// }
+// }

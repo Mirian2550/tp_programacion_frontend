@@ -64,13 +64,14 @@
 .center {
   position: absolute;
   margin-top: 55px;
-  top: 20%;
+  top: 10%;
   width: 75%;
   text-align: center;
   font-size: 45px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #81f151;
 }
+
 p.vignette {
   position: relative;
   margin-top: 100px;
