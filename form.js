@@ -1,14 +1,16 @@
 const input = document.getElementById("plot");
 const remainingChars = document.getElementById("remaining-chars");
 
+remainingChars.textContent = 250 - input.value.length;
+
 input.addEventListener("input", (e) => {
-  let len = e.target.value.length;
-  let remaining = 250 - len;
+  const len = e.target.value.length;
+  const remaining = 250 - len;
 
   remainingChars.textContent = remaining;
 
-  remainingChars.className = "";
-  input.className = "";
+  remainingChars.classList.remove("error", "warning");
+  input.classList.remove("error", "warning");
 
   if (len < 10) {
     remainingChars.classList.add("error");

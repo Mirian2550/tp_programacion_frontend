@@ -3,6 +3,7 @@ h2 {
   font-size: 45px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #81f151;
+  text-transform: uppercase;
 }
 
 .form-area {
@@ -74,13 +75,19 @@ button:hover {
 }
 
 .warning {
-  border: 2px solid #f1c40f;
-  background: #fff8e1;
   color: #f39c12;
 }
 
 .error {
+  color: #e74c3c;
+}
+
+textarea.warning {
+  border: 2px solid #f1c40f;
+  background: #fff8e1;
+}
+
+textarea.error {
   border: 2px solid #e74c3c;
   background: #fdecea;
-  color: #e74c3c;
 }
