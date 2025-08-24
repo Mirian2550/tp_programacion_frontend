@@ -40,11 +40,6 @@ textarea {
   font-size: 14px;
 }
 
-.input-error {
-  border: 2px solid #e53;
-  background: #ffecec;
-}
-
 .actions {
   display: flex;
   justify-content: flex-end;
