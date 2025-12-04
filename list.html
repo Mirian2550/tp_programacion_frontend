@@ -18,9 +18,6 @@
         <a class="logo" href="home.html" aria-label="Inicio">
           <img id="site-logo" src="images/logo.png" alt="Logo" />
         </a>
-        <div class="topnav">
-          <input type="text" placeholder="Buscar película" />
-        </div>
         <nav class="nav">
           <a class="inactive" href="home.html">Inicio</a>
           <a class="active" href="list.html">Listas</a>
@@ -31,150 +28,79 @@
     </header>
 
     <main>
-      <section>
-        <h1>Listado de películas</h1>
-        <h2>Clásicos inolvidables</h2>
-        <ul>
-          <li>
-            <img
-              src="images/listaclasicos/a-clockwork-orange-malcolm-mcdowell-1971_u-l-q1a7k3t0.jpg"
-              alt="Póster de La naranja mecánica (1971)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 4 de 5">★★★★☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                recusandae natus nihil aspernatur incidunt iste eveniet corrupti
-                non earum.
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listaclasicos/the-godfather-1972-directed-by-francis-ford-coppola_u-l-q1eueod0.jpg"
-              alt="Póster de El Padrino (1972)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 5 de 5">★★★★★</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit esse libero quisquam iste fuga earum rem, optio impedit
-                possimus.
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listaclasicos/warner-brothers-poster-for-the-film-casablanca-1942_u-l-q1hkgwn0.jpg"
-              alt="Póster de Casablanca (1942)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 5 de 5">★★★★★</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                dolores numquam, commodi, at ullam beatae distinctio iusto quis
-                pariatur?
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <h1>Listado</h1>
+      <p class="description">
+        Selecciona la categoría de películas que más te interese.
+      </p>
 
-      <section>
-        <h2>Terror asegurado</h2>
-        <ul>
-          <li>
-            <img
-              src="images/listaterror/a-nightmare-on-elm-street-one-sheet_u-l-fac4410.jpg"
-              alt="Póster de Pesadilla en la calle Elm (1984)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 3 de 5">★★★☆☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                vero cumque incidunt reprehenderit. Debitis placeat fuga libero
-                impedit?
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listaterror/the-exorcist_u-l-q1rlwiv0.jpg"
-              alt="Póster de El Exorcista (1973)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 5 de 5">★★★★★</div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Impedit aliquid, perferendis quis eveniet incidunt quos eaque
-                praesentium.
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listaterror/the-thing-1982-directed-by-john-carpenter_u-l-q1rlwi60.jpg"
-              alt="Póster de La Cosa (1982)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 4 de 5">★★★★☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo
-                unde quam vitae nihil temporibus, velit recusandae voluptatum
-                perspiciatis!
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <div class="category-cards-container">
+        <section class="category-card" id="clasicos">
+          <h2>Clásicos inolvidables</h2>
+          <p>
+            Las obras maestras del cine que han definido generaciones y siguen
+            siendo esenciales. ¡Un viaje en el tiempo garantizado!
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Clásicos</a>
+        </section>
 
-      <section>
-        <h2>La risa es total</h2>
-        <ul>
-          <li>
-            <img
-              src="images/listacomedia/austin-powers-international-man-of-mystery-french-style_u-l-f4s5rs0.jpg"
-              alt="Póster de Austin Powers (1997)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 3 de 5">★★★☆☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus et numquam odio adipisci deleniti temporibus id.
-                Repellat?
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listacomedia/beverly-hills-cop-2_u-l-f4s7yt0.jpg"
-              alt="Póster de Superdetective en Hollywood II (1987)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 4 de 5">★★★★☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                eveniet temporibus, cum recusandae, sit error accusantium sunt
-                architecto sed?
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/listacomedia/david-brodsky-hangover_u-l-q1qjt430.jpg"
-              alt="Póster de ¿Qué pasó ayer? (2009)"
-            />
-            <div class="item-content">
-              <div class="rating" aria-label="Calificación: 4 de 5">★★★★☆</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis ea quibusdam rerum minima adipisci inventore
-                accusantium.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
+        <section class="category-card" id="terror">
+          <h2>Terror</h2>
+          <p>
+            La selección más escalofriante para los amantes de las emociones
+            fuertes. ¡Prepárate para no dormir!
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Terror</a>
+        </section>
+
+        <section class="category-card" id="comedia">
+          <h2>Comedia</h2>
+          <p>
+            La risa es total ,las comedias más hilarantes para un rato de pura
+            diversión. ¡Risas incontrolables aseguradas!
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Comedia</a>
+        </section>
+
+        <section class="category-card" id="drama">
+          <h2>Drama</h2>
+          <p>
+            Historias emotivas que exploran las relaciones humanas, conflictos
+            personales y profundas reflexiones sobre la vida y la condición
+            humana.
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Drama</a>
+        </section>
+
+        <section class="category-card" id="accion">
+          <h2>Acción</h2>
+          <p>
+            Películas llenas de adrenalina, persecuciones, combates intensos y
+            explosiones, donde la emoción y el ritmo rápido son los
+            protagonistas.
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Acción</a>
+        </section>
+
+        <section class="category-card" id="animacion">
+          <h2>Animación</h2>
+          <p>
+            Un mundo de creatividad y fantasía, con películas y cortometrajes
+            creados mediante diversas técnicas de animación, ideales para todas
+            las edades.
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Animación</a>
+        </section>
+
+        <section class="category-card" id="documental">
+          <h2>Documental</h2>
+          <p>
+            Obras que presentan hechos, realidades y temas específicos con fines
+            informativos, educativos o de concientización, explorando el mundo
+            real.
+          </p>
+          <a href="#" class="btn-ver-mas">Ver Documental</a>
+        </section>
+      </div>
     </main>
 
     <footer>

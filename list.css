@@ -1,81 +1,149 @@
+/* Estilos Generales y Tipografía */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
-  font-size: 44px;
-  line-height: 1.1;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #81f151;
-  margin: 40px 0px;
-  text-transform: uppercase;
-  text-align: center;
+    font-size: 44px;
+    line-height: 1.1;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #81f151; /* Color de acento verde brillante */
+    margin: 40px 0px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #ccc;
 }
 
 h2 {
-  font-size: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #81f151;
-  text-transform: uppercase;
-}
-main li img {
-  object-fit: cover;
-}
-
-main ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
-  background-color: rgba(77, 77, 77, 0.25);
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #1a1a1a; /* Títulos oscuros dentro de la tarjeta clara */
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-main li {
-  width: 400px;
-  height: 300px;
-  margin: 20px auto;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  display: flex;
-  border-color: #81f151;
-  border-width: 6px;
-  border-style: solid;
-  overflow: auto;
-}
-
-.item-content {
-  padding: 24px;
-}
-
-.item-content p {
-  margin: 30px 0;
-}
-
+/* ------------------------------------------- */
+/* ESTILOS DE LA BARRA DE BÚSQUEDA */
+/* ------------------------------------------- */
 .topnav {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #222;
 }
 
 .topnav input {
-  width: 40%;
-  min-width: 240px;
-  max-width: 460px;
-  padding: 12px 16px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  font-size: 16px;
-  background: #fff;
-  color: #111;
+    width: 90%;
+    max-width: 460px;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #fff;
+    color: #111;
 }
 
 .topnav input:focus {
-  border-color: #69a94e;
-  outline: none;
+    border-color: #81f151; 
+    outline: none;
 }
 
-.rating {
-  font-size: 20px;
-  color: #f1c40f;
-  margin-bottom: 8px;
-  letter-spacing: 2px;
+/* ------------------------------------------- */
+/* CONTENEDOR DE TARJETAS DE CATEGORÍA */
+/* ------------------------------------------- */
+.category-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las tarjetas */
+    gap: 30px; /* Espacio entre las tarjetas */
+    padding: 40px 20px;
+}
+
+/* ESTILOS DE CADA TARJETA DE CATEGORÍA */
+.category-card {
+    /* Fondo e imagen de referencia con degradado para legibilidad */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurecer la imagen de fondo */
+    
+    width: 100%;
+    max-width: 380px; /* Ancho máximo para el diseño de tarjeta */
+    height: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #81f151; /* Borde de acento */
+    color: #fff; /* Texto en blanco para el contenido */
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(129, 241, 81, 0.4); /* Sombra de acento al pasar el ratón */
+}
+
+
+/* Estilos específicos del contenido de la tarjeta */
+.category-card h2 {
+    color: #81f151; /* Título de categoría con color de acento */
+}
+
+.category-card p {
+    font-size: 1em;
+    line-height: 1.4;
+    flex-grow: 1;
+    margin: 10px 0 20px;
+}
+
+/* Estilo del botón "Ver más" */
+.btn-ver-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #81f151;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-mas:hover {
+    background-color: #a3ff78; /* Color más claro al pasar el ratón */
+}
+
+
+/* Imágenes de fondo para cada categoría (sustituye las rutas por las reales o usa colores) */
+#clasicos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/3945321/pexels-photo-3945321.jpeg');
+}
+#terror {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/29397092/pexels-photo-29397092.jpeg');
+}
+#comedia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/7142963/pexels-photo-7142963.jpeg');
+}#drama {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/5616284/pexels-photo-5616284.jpeg');
+}#accion {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/8717528/pexels-photo-8717528.jpeg');
+}#animacion {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/3411139/pexels-photo-3411139.jpeg');
+}#documental {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg');
 }
