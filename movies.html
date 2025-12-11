@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav-footer.css" />
+    <link rel="stylesheet" href="list.css" /> 
+    <link rel="stylesheet" href="movies.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Resultados de Películas</title>
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <a class="logo" href="home.html" aria-label="Inicio">
+                <img id="site-logo" src="images/logo.png" alt="Logo" />
+            </a>
+            <nav class="nav">
+                <a class="inactive" href="home.html">Inicio</a>
+                <a class="active" href="list.html">Listas</a>
+                <a class="inactive" href="form.html">Agregar a tu log</a>
+                <a class="inactive" href="#">Tu perfil</a>
+            </nav>
+        </div>
+    </header>
+
+   <main id="movies-container"></main>
+
+    <!--  Modal oculto -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body">
+          <!-- Aquí se cargan los datos de la pelicula -->
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+        </footer>
+        <script src="movies.js" defer ></script>
+</body>
+</html>
