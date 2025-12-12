@@ -25,7 +25,7 @@ body {
   background: #161616;
   border-radius: 12px;
   overflow: hidden;
-  height: 55vh;
+  height: 60vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -152,3 +152,120 @@ body {
   float: left;
   margin-right: 20px;
 }
+/* =====================================
+   MODAL BASE
+===================================== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+/* CONTENIDO DEL MODAL */
+.modal-content {
+  background: #1a1a1a;
+  width: 85%;
+  max-width: 750px;
+  padding: 30px;
+  border-radius: 14px;
+  color: white;
+  position: relative;
+
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* BOTÓN CERRAR */
+.close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: #ff6b6b;
+}
+
+/* =====================================
+   DETALLE DE PELÍCULA
+===================================== */
+.modal-img {
+  width: 240px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#modal-body h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: #2ecc71;
+}
+
+/* =====================================
+   FORMULARIO EDITAR
+===================================== */
+#modal-body label {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+#modal-body input,
+#modal-body textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  color: white;
+  font-size: 1rem;
+}
+
+#modal-body textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* BOTÓN GUARDAR */
+#save-edit {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2ecc71;
+  color: black;
+  font-size: 1.05rem;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+#save-edit:hover {
+  background: #44f08a;
+  transform: translateY(-2px);
+}
+
