@@ -12,6 +12,7 @@ Incluye páginas de inicio, listado de películas y formulario para agregar nuev
 - Mirian Yañez
 - Elías Romero
 - Ludmila Aguirre
+- Brisa Giavedoni **Dic/2025**
 
 ## Tecnologías utilizadas
 
@@ -22,3 +23,6 @@ Incluye páginas de inicio, listado de películas y formulario para agregar nuev
 ## Año
 
 2025
+
+## Actualizado por:
+- Brisa Giavedoni **Dic/2025**

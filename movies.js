@@ -116,13 +116,19 @@ async function openEditModal(id) {
     <input id="edit-title" value="${movie.title}" />
 
     <label>Año:</label>
-    <input id="edit-year" value="${movie.year}" />
+    <input id="edit-year" type="number" value="${movie.year}" />
 
     <label>Género:</label>
     <input id="edit-genre" value="${movie.genre}" />
 
-    <label>Duración:</label>
-    <input id="edit-duration" value="${movie.duration_min}" />
+    <label>Duración (min):</label>
+    <input id="edit-duration" type="number" value="${movie.duration_min}" />
+
+    <label>URL Imagen:</label>
+    <input id="edit-image" value="${movie.image_url}" />
+
+    <label>Idioma:</label>
+    <input id="edit-language" value="${movie.language || ""}" />
 
     <label>Descripción:</label>
     <textarea id="edit-description">${movie.description}</textarea>
@@ -137,26 +143,50 @@ async function openEditModal(id) {
 //       GUARDAR EDICIÓN
 // =========================
 
-document.addEventListener("click", async (e) => {
-  if (e.target.id === "save-edit") {
-    const id = e.target.dataset.id;
+// =========================
+//      GUARDAR CAMBIOS
+// =========================
 
+document.addEventListener("click", async (e) => {
+  // Verificamos que el clic fue en el botón de guardar
+  if (e.target.id === "save-edit") {
+    const id = e.target.dataset.id; // Obtenemos el ID guardado en el botón
+
+    // 1. Recolectamos los datos de los inputs del modal/formulario
+    // IMPORTANTE: Los nombres de la izquierda deben ser los que espera tu Backend
     const updatedMovie = {
-      title: document.getElementById("edit-title").value,
-      year: document.getElementById("edit-year").value,
-      genre: document.getElementById("edit-genre").value,
-      duration_min: document.getElementById("edit-duration").value,
-      description: document.getElementById("edit-description").value,
+      titulo: document.getElementById("edit-title").value,
+      anio: document.getElementById("edit-year").value,
+      genero: document.getElementById("edit-genre").value,
+      duracion: document.getElementById("edit-duration").value,
+      image_url: document.getElementById("edit-image").value, // Asegúrate de tener este input
+      idioma: document.getElementById("edit-language").value, // Asegúrate de tener este input
+      descripcion: document.getElementById("edit-description").value,
     };
 
-    await fetch(`http://localhost:3000/movies/${id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedMovie),
-    });
+    try {
+      // 2. Enviamos la petición PUT al servidor
+      const response = await fetch(`http://localhost:3000/movies/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedMovie),
+      });
 
-    closeModal();
-    location.reload();
+      // 3. Verificamos si el servidor aceptó el cambio
+      if (response.ok) {
+        alert("¡Película actualizada correctamente!");
+        closeModal(); // Cerramos el modal
+        location.reload(); // Recargamos la página para ver los cambios
+      } else {
+        const errorData = await response.json();
+        alert("Error al actualizar: " + errorData.message);
+      }
+    } catch (error) {
+      console.error("Error de conexión:", error);
+      alert("No se pudo conectar con el servidor.");
+    }
   }
 });
 
